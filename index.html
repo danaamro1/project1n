@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffc0cb; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #000; 
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #000; margin-bottom: 20px;">Welcome Dana and Haneen in Static Server</h1>
+        <h1 style="color: #000; margin-bottom: 20px;">Welcome Dana and Haneen in Dynamic Server</h1>
+
+        <p style="color: #666; margin-bottom: 20px;">Please enter your information below:</p>
+        <form id="user-form" action="#" method="POST">
+            <label for="name" style="color: #000; margin-bottom: 10px;">YOUR NAME:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;" required>
+            <label for="password" style="color: #000; margin-bottom: 10px;">YOUR PASSWORD:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;" required>
+            <input type="submit" value="Submit" style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 3px; cursor: pointer;" onclick="redirectToInfoPage()">
+        </form>
+    </div>
+    
+
+
+
+    <script>
+        function redirectToInfoPage() {
+            window.location.href = "info_page.html";
+        }
+    </script>
+</body>
+</html>
